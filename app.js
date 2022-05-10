@@ -33,7 +33,7 @@ app.use(forgetPasswordRoutes)
 app.use(downloadlistRoutes)
 // app.use(helmet());
 app.use(compression())
-app.use(morgan('combined',{stream:acessLogStream}))
+// app.use(morgan('combined',{stream:acessLogStream}))
 
 const User=require('./models/user')
 const Expense=require('./models/expense')
