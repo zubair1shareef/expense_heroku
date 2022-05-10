@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="home.css"/>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Gochi+Hand&family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+
+        <div class="premium_btn" id="premium_btn">
+            <button class="premium_button" id="premium_button">Buy Premium</button>
+
+        </div>
+        <div class="details_btn" id="details_btn">
+            <button class="premium_button" id="premium_button"><a href="./detail_expense.html">detail expense</a></button>
+
+        </div>
+
+        <!-- -------adding expense form----- -->
+        <div class="expense_form_container">
+
+            <form class="expense_from" id="expense_from">
+                <div class="form_iems">
+                    <label for="money_spend">money spend</label>
+
+                    <input name="money_spend" id="money_spend" class="money_spend" type="number" >
+
+                </div>
+                <div class="form_iems">
+                    <label for ='description'>description </label>
+
+                    <input name="description" id="description" class="description" type="text" >
+
+                </div>
+                <div class="form_iems">
+                    <label for="category">category </label>
+
+                    <select id="category" name="category">
+                        <option value="Food">Food</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="salary ">salary </option>
+                        <option value="shopping">shopping</option>
+                        <option value="other">other</option>
+                      </select>
+
+                </div>
+                
+               <button type="submit" class="add_expense_btn" id="add_expense_btn"> +</button>
+            </form>
+
+
+        </div>
+
+
+
+        <!-- ----------showing expense ----------- -->
+        <div class="expense_show_container">
+
+            <div class="expense" id="expense">
+
+                <form class="expense_show_form" >
+
+                    <div class="expense_header">
+                        <p>SNO</p>
+                        <p>Amount</p>
+                        <p>Description</p>
+                        <p>Category</p>
+                        <p>Date</p>
+
+                    </div>
+
+                    <div class="expense_item_cont" id="expense_item_cont">
+
+                    </div>
+                    <div class="pages" id="pagination">
+
+
+
+
+
+                       
+                    </div>
+                    <div class="paginationCont">
+                        <label for="category">row per page </label>
+    
+                        <select id="row-per-page" name="row-per-page">
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20 ">20 </option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                          </select>
+    
+                    </div>
+                 </form>
+
+            </div>
+            
+        </div>
+        <div class="logout" id="logout">
+            <button class="logout_button" id="logout_button">logout</button>
+
+        </div>
+       
+        
+
+    </div>
+    
+    <script src="./home.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

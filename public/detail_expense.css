@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://plexcollectionposters.com/images/2021/05/16/background-images-for-login-page3bc68c53b0db224b.jpg");
+  -webkit-backdrop-filter: blur(1em);
+          backdrop-filter: blur(1em);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Gochi Hand', cursive;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.container .monthly_expense_cont {
+  height: 60%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .yearly_expense_cont {
+  height: 40%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.expense_show_form {
+  border: 6px solid rgba(39, 65, 180, 0.551);
+  -webkit-box-shadow: -20px 13px 74px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -20px 13px 74px 0px rgba(0, 0, 0, 0.75);
+  overflow-y: scroll;
+  background-color: white;
+  height: 75%;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 15px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.expense_show_form .expense_header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.expense_show_form .expense_items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.yearly_expense_form {
+  border: 6px solid rgba(39, 65, 180, 0.551);
+  -webkit-box-shadow: -20px 13px 74px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -20px 13px 74px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  height: 75%;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 15px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+}
+
+.yearly_expense_form .expense_header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.download_btn_cont {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
+.download_btn_cont button {
+  border: none;
+  background-color: #209e00;
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=detail_expense.css.map */

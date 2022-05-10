@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./detail_expense.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- -------------------------------monthly expense------------ -->
+
+        <div class="monthly_expense_cont">
+            <h1>monthly expense</h1>
+            
+            <form class="expense_show_form" >
+                
+
+                <div class="expense_header">
+                    <p>SNO</p>
+                    <p>Amount</p>
+                    <p>Description</p>
+                    <p>Category</p>
+                    <p>Date</p>
+
+                </div>
+
+                <div class="expense_item_cont" id="expense_item_cont">
+                    <div class="expense_header" id="expense_header">
+                        <p>1</p>
+                        <p>234</p>
+                        <p>fsdf</p>
+                        <p>food</p>
+                        <p>31/123/123/</p>
+    
+                    </div>
+                </div>
+             </form>
+
+        </div>
+
+
+
+
+
+      
+
+
+
+
+
+        <!-- ---------------------yearly expense-------------------- -->
+        <div class="yearly_expense_cont">
+            <h1>Download List Data</h1>
+
+
+            <div class="yearly_expense_form" id="downloadlist_form">
+                <div class="expense_header">
+                <p>date</p>
+                <p>link</p>
+               
+              
+                </div>
+                <div class="expense_header" >
+                    <p>june</p>
+                    <p><a href="#">click here to download</a></p>
+                    
+                 </div>
+            </div>
+           
+        </div>
+        <div class="download_btn_cont">
+            <button class="download_btn" id="download_btn">download</button>
+        </div>
+    </div>
+    <script src="./detail_expense.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

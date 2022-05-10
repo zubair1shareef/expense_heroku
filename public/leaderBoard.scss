@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+body{
+width: 100%;
+height: 100vh;
+}
+
+.container{
+    width: 100%;
+height: 100%;
+background-image: url('https://plexcollectionposters.com/images/2021/05/16/background-images-for-login-page3bc68c53b0db224b.jpg');
+font-family: 'Fredoka', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+.leaderboard{
+    margin-bottom: 20px;
+}
+
+}
+.use_cont{
+    box-shadow: 10px 10px 20px  rgba(71, 70, 70, 0.664);
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    backdrop-filter: blur(2.8em); 
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.23);
+    .user_heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
+    .users{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+}

@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://plexcollectionposters.com/images/2021/05/16/background-images-for-login-page3bc68c53b0db224b.jpg');
+    backdrop-filter: blur(1em); 
+        background-repeat: no-repeat;
+        background-size: cover;
+}  
+.container{
+    
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fredoka', sans-serif;
+
+    font-family: 'Gochi Hand', cursive;
+
+    font-family: 'Hind Siliguri', sans-serif;
+
+    .logout{
+        position: absolute;
+        bottom:10px ;
+        right:10px;
+        
+        button{
+           height: 30px;
+           border-radius: 4px;
+           border: none;
+            background-color: red;  
+        }
+    }
+
+    .premium_btn{
+        position: absolute;
+        right:10px ;
+        top:10px;
+
+        button{
+            background-color: orange;
+            border: none;
+            border: 6px solid rgba(39, 65, 180, 0.551);
+            cursor: pointer;
+        }
+    }
+    .details_btn{
+        position: absolute;
+        right:10px ;
+        top:90px;
+
+        button{
+            background-color: orange;
+            border: none;
+            border: 6px solid rgba(39, 65, 180, 0.551);
+            cursor: pointer;
+            a{
+                text-decoration: none
+            }
+        }
+    }
+    .Premi_umuser{
+        color: white;
+        background-color: rgb(207, 132, 51);
+        border-radius: 10px;
+        padding: 5px;
+    }
+}
+.expense_form_container{
+   height: 30%;
+
+   .user_name_Form{
+    border: 6px solid rgba(39, 65, 180, 0.551);
+ -webkit-box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+ box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    height: 28%;
+    width: 18%;
+   margin: 10px auto;
+   border-radius: 15px;
+   padding: 10px;
+ //   box-shadow: 10px 10px 10px rgba(122, 121, 121, 0.686);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+
+
+ 
+   .expense_from{
+       border: 6px solid rgba(39, 65, 180, 0.551);
+    -webkit-box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+    box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+       background-color: white;
+       height: 80%;
+       width: 18%;
+      margin: 10px auto;
+      border-radius: 15px;
+      padding: 10px;
+    //   box-shadow: 10px 10px 10px rgba(122, 121, 121, 0.686);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .form_iems{
+          margin-top: 10px;
+          input{
+              border: none;
+              border: 1px solid rgba(128, 128, 128, 0.541);
+              border-radius: 4px;
+              width: 90px;
+              height: 20px;
+          }
+          .description{
+            height: 30px;
+            width: 100px;
+        }
+      }
+      .add_expense_btn{
+          border: none;
+        margin-top: 10px;
+        margin: 10px auto;
+        background-color: rgba(45, 39, 158, 0.804);
+        width: 30px;
+        height: 30px;
+        color: white;
+        border-radius: 100px;
+        margin-left: 46%;
+        margin-top: 10px;
+        cursor: pointer;
+        
+      }
+      
+   }
+
+}
+.expense_show_container{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .expense{
+       
+        width: 70%;
+        height: 450px;
+        background-color: white;
+        border: 6px solid rgba(39, 65, 180, 0.551);
+        -webkit-box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -20px 13px 74px 0px rgba(0,0,0,0.75);
+        box-shadow: 20px 13px 14px 0px rgba(43, 42, 42, 0.442);
+           
+           border-radius: 15px;
+           
+        .expense_show_form{
+            padding-top:10px;
+            padding-left: 20px;
+            padding-right: 10px;
+            
+
+            .expense_header{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin-right: 10px;
+                    font-weight: 900;
+                   
+                }
+                border-bottom: 1px solid black;
+                margin-bottom: 20px;
+              
+
+            }  
+           .expense_item_cont{
+           height: 360px;
+           overflow-y: scroll;
+           
+          
+
+
+            .expense_item{
+                display: flex;
+                justify-content: space-between;
+                p{margin-right: 10px;
+                    font-weight: 400;
+                   
+                }
+                
+
+
+            }  
+
+            }
+            .pages{
+                display: flex;
+                justify-content: space-around;
+                a{
+                    text-align: center;
+                    border: 2px solid rgb(215, 209, 32);
+                    width: 20px;
+                    height: 25px;
+                    text-decoration: none;
+                    color: rgb(212, 163, 30);
+                }
+
+            }
+           
+
+         }
+         
+
+    }
+    
+    
+
+}
+
+.paginationCont{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
