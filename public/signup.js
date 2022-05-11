@@ -1,3 +1,5 @@
+
+   const url='http://54.160.177.138'
 const formm=document.getElementById('formCont')
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -26,7 +28,7 @@ formm.addEventListener('submit', (e)=>{
     }
     
     else{
-        axios.post('http://localhost:3000/signup',{
+        axios.post(`${url}:3000/signup`,{
             name:namee,
             email: email,
             password:password

@@ -1,3 +1,6 @@
+
+   const url='http://54.160.177.138'
+
 const expenseForm=document.getElementById('expense_from')
 
 const expense_item_cont=document.getElementById('expense_item_cont')
@@ -19,7 +22,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
     var tokenn= localStorage.getItem('token')
     let premimum=false;
 
-   await axios.get('http://localhost:3000/getLatestPaymentUpdate',{ headers: {"Authorization" : tokenn} }).then(premimumdata=>{
+   await axios.get(`${url}:3000/getLatestPaymentUpdate`,{ headers: {"Authorization" : tokenn} }).then(premimumdata=>{
        console.log(premimumdata)
        if(premimumdata.data.length>0 ){
         if(premimumdata.data[0].status=='SUCCESSFUL'){
@@ -52,7 +55,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
     }
     var rows=localStorage.getItem('noofrows')
     rows=rows || 10
-    await axios.get(`http://localhost:3000/getexpense?page=${page}&rowno=${rows}`,{
+    await axios.get(`${url}:3000/getexpense?page=${page}&rowno=${rows}`,{
         headers:{"Authorization":token}
     })
     .then(data=>{
@@ -90,7 +93,7 @@ expenseForm.addEventListener('submit',async(e)=>{
     console.log(token)
 
    
-    axios.post('http://localhost:3000/addexpense',{
+    axios.post(`${url}:3000/addexpense`,{
         expenseamount ,
         description,
         category
@@ -157,7 +160,7 @@ function buypremimum(){
     const premimumBtn=document.getElementById('premium_button')
     premimumBtn.addEventListener('click', async (e)=>{
         e.preventDefault();
-        const response  = await axios.get('http://localhost:3000/premiummembership', { headers: {"Authorization" : token} });
+        const response  = await axios.get(`${url}:3000/premiummembership`, { headers: {"Authorization" : token} });
         console.log(response);
         var options =
         {
@@ -175,7 +178,7 @@ function buypremimum(){
          // This handler function will handle the success payment
          "handler": function (response) {
              console.log(response);
-             axios.post('http://localhost:3000/updatetransactionstatus',{
+             axios.post(`${url}:3000/updatetransactionstatus`,{
                  order_id: options.order_id,
                  payment_id: response.razorpay_payment_id,
              }, { headers: {"Authorization" : token} }).then(() => {

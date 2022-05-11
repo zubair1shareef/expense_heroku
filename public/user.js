@@ -1,5 +1,5 @@
 
-    
+   const url='http://54.160.177.138'
 
 
     const expenseForm=document.getElementById('expense_from')
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
     console.log('dom loadeed')
     const token= localStorage.getItem('token')
-    await axios.get(`http://localhost:3000/getexpensebyid/${id}`,{
+    await axios.get(`${url}:3000/getexpensebyid/${id}`,{
         headers:{"Authorization":token}
     })
     .then(data=>{

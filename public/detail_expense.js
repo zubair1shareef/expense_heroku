@@ -1,8 +1,11 @@
+
+  const url='http://54.160.177.138'
+
 document.addEventListener("DOMContentLoaded",async()=>{
     let count=1;
 
     const token= localStorage.getItem('token')
-    await axios.get(`http://localhost:3000/getexpense`,{
+    await axios.get(`${url}:3000/getexpense`,{
         headers:{"Authorization":token}
     })
     .then(data=>{
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded",async()=>{
     })
 
 
-    axios.get('http://localhost:3000/downloadlist',{
+    axios.get(`${url}:3000/downloadlist`,{
         headers:{"Authorization":token}
     }).then(downloaddata=>{
 
@@ -54,7 +57,7 @@ document.getElementById('download_btn').addEventListener('click',(e)=>{
     e.preventDefault();
     console.log('fdsf')
     const token= localStorage.getItem('token')
-    axios.get('http://localhost:3000/downloadexpense',{
+    axios.get(`${url}:3000/downloadexpense`,{
         headers:{"Authorization":token}
     }).then(response=>{
         console.log(response)

@@ -1,6 +1,9 @@
+
+   const url='http://54.160.177.138'
+
 document.addEventListener('DOMContentLoaded',()=>{
     user_cont=  document.getElementById('use_cont')
-    axios.get('http://localhost:3000/getallusers').then(alluser=>{
+    axios.get(`${url}:3000/getallusers`).then(alluser=>{
 
         let paramString = window.location.href;
         console.log(paramString.split('/'))

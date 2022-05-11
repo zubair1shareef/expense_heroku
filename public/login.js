@@ -1,3 +1,5 @@
+
+   const url='http://54.160.177.138'
 const form=document.getElementById('login_form')
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -13,7 +15,7 @@ form.addEventListener('submit',async(e)=>{
    const email= e.target.email.value
    const password= e.target.password.value
    console.log(password);
-   axios.post('http://localhost:3000/login',{
+   axios.post(`${url}:3000/login`,{
     email,password
    }).then(data=>{
     console.log(data.status)
